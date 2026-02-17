@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360DigiTMG | Empower Your Career</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo/360 logo.jpeg" alt="360 DigiTMG Logo">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#stats">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#why-us">why choose us</a></li>
+                <li>
+                    <a href="#contact" class="contact-btn">Contact Us</a>
+                </li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero-slider" id="home">
+
+        <div class="slides">
+
+            <div class="slide active">
+                <div class="banner-text">
+                    <h1>Leading the Future with <span>Data Science & AI</span> Expertise</h1>
+                    <p class="subheading">70+ Domain-Specific Analytics Programs Delivered Since 2013</p>
+                    <ul class="banner-points">
+                        <li>Transforming businesses with advanced AI solutions</li>
+                        <li>Industry-focused, results-driven approach</li>
+                        <li>Trusted expertise across multiple domains</li>
+                    </ul>
+                    <a href="https://wa.me/918669586311?text=Hello%20I%20want%20to%20enquire%20about%20training%20programs"
+                        class="btn-primary scroll-link" target="_blank" aria-label="Chat on WhatsApp">
+                        Claim Your Free Consultation Now
+                    </a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/DataScience.png" alt="Data Science & AI Banner">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="banner-text">
+                    <h1>Experience <span>Real-World</span> Impact</h1>
+                    <p class="subheading">100% Practical Learning Through Live Projects</p>
+                    <ul class="banner-points">
+                        <li>Work on industry-relevant case studies</li>
+                        <li>Solve real business problems</li>
+                        <li>Build job-ready skills from day one</li>
+                    </ul>
+                    <a href="https://wa.me/918669586311?text=Hello%20I%20want%20to%20enquire%20about%20training%20programs"
+                        class="btn-primary scroll-link" target="_blank" aria-label="Chat on WhatsApp">
+                        Start Your Journey Today
+                    </a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/RealWorld.png" alt="Real-World Impact Banner">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="banner-text">
+                    <h1>Master <span>Generative AI</span> – Online Certification Course</h1>
+                    <p class="subheading">Unlock the Power of AI & Elevate Your Creativity</p>
+                    <ul class="banner-points">
+                        <li>Learn from Trainers from ISB, IIT & IIM</li>
+                        <li>60 Hours of Intensive Classroom & Online Sessions</li>
+                        <li>20 Hours of Free Python Programming Videos</li>
+                        <li>Job Assistance to boost your career</li>
+                    </ul>
+                    <a href="#enroll" class="btn-primary scroll-link">Enroll Now & Transform Your Future!</a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/GenerativeAI.png" alt="Generative AI Course Banner">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="banner-text">
+                    <h1>Certificate Program in <span>MLOps Engineering</span></h1>
+                    <p class="subheading">Get Hands-On Training & Job Assistance in India</p>
+                    <ul class="banner-points">
+                        <li>60 Hours of Interactive Classroom Sessions</li>
+                        <li>80 Hours of Practical Assignments</li>
+                        <li>Complementary Modules</li>
+                    </ul>
+                    <a href="#enroll" class="btn-primary scroll-link">Enroll Now & Boost Your Career in MLOps!</a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/MLOps.png" alt="MLOps Engineering Banner">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="banner-text">
+                    <h1>AI for <span>Healthcare Professionals</span></h1>
+                    <p class="subheading">Revolutionizing Patient Care with AI</p>
+                    <ul class="banner-points">
+                        <li>Learn from Expert Faculty from ISB, IIT, IIM & Leading Doctors</li>
+                        <li>30 Hours of Interactive Classroom Sessions</li>
+                        <li>2 Masterclasses by Senior Doctors</li>
+                        <li>20+ Hours of Bonus Power BI / Python eLearning</li>
+                    </ul>
+                    <a href="#enroll" class="btn-primary scroll-link">Enroll Now & Transform Healthcare with AI!</a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/AIHealthcare.png" alt="AI Healthcare Banner">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="banner-text">
+                    <h1>Certificate Course on <span>Data Analytics</span></h1>
+                    <p class="subheading">Data Analytics course empowers you with all the needed skills and trends to
+                        lead the changing world. Showcase your Data Analytics skills and make yourself hireable by the
+                        top employers.</p>
+                    <div class="review-strip">
+                        <div class="review-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google" class="review-logo">
+
+                            <div class="review-text">
+                                <h3>4.8 <span>Google Rating</span></h3>
+                                <div class="stars">★★★★★</div>
+                                <p>15,000+ Reviews</p>
+                            </div>
+                        </div>
+
+                        <div class="review-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                                alt="Facebook" class="review-logo fb">
+
+                            <div class="review-text">
+                                <h3>5 <span>Facebook Rating</span></h3>
+                                <div class="stars">★★★★★</div>
+                                <p>660 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#enroll" class="btn-primary scroll-link">Get your profile reviewed</a>
+                </div>
+                <div class="banner-image">
+                    <img src="images/banner/DataAnalytics.png" alt="AI Healthcare Banner">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <section class="stats" id="stats">
+        <div class="stats-container">
+
+            <div class="stat-box">
+                <h2><span class="counter" data-target="25000">0</span><span class="plus">+</span></h2>
+                <p>Learners Trained Worldwide</p>
+            </div>
+
+            <div class="stat-box">
+                <h2><span class="counter" data-target="1000">0</span><span class="plus">+</span></h2>
+                <p>Corporate Partners</p>
+            </div>
+
+            <div class="stat-box">
+                <h2><span class="counter" data-target="693">0</span><span class="plus">+</span></h2>
+                <p>Internship Opportunities</p>
+            </div>
+
+            <div class="stat-box">
+                <h2><span class="counter" data-target="500">0</span><span class="plus">+</span></h2>
+                <p>Corporate Pre-assessments Conducted</p>
+            </div>
+
+            <div class="stat-box">
+                <h2><span class="counter" data-target="100">0</span><span class="plus">+</span></h2>
+                <p>Projects with Real Industry Impact</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="courses-section" id="courses">
+        <h2 class="section-title">Featured Courses</h2>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <img src="images/courses/data-science.png" alt="Data Science">
+                <h3>Data Science</h3>
+                <p>
+                    Master Python, Machine Learning, Statistics, and AI to build
+                    real-world data-driven solutions used by top companies.
+                </p>
+                <button onclick="openCtaModal('data-science')">Learn More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="images/courses/data-analytics.png" alt="Data Analytics">
+                <h3>Data Analytics</h3>
+                <p>
+                    Learn Excel, SQL, Power BI, and Tableau to analyze business data
+                    and drive smart decision-making.
+                </p>
+                <button onclick="openCtaModal('data-analytics')">Learn More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="images/courses/data-engineers.png" alt="Data Engineering">
+                <h3>Data Engineering</h3>
+                <p>
+                    Build scalable data pipelines using Big Data, Spark, Hadoop,
+                    and cloud platforms like AWS and Azure.
+                </p>
+                <button onclick="openCtaModal('data-engineering')">Learn More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="images/courses/ai.png" alt="Generative AI">
+                <h3>Gen AI & Prompt Engineering</h3>
+                <p>
+                    Learn Generative AI, ChatGPT, LLMs, and prompt engineering to
+                    create intelligent AI-powered applications.
+                </p>
+                <button onclick="openCtaModal('gen-ai')">Learn More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="images/courses/mlops.png" alt="MLOps">
+                <h3>MLOps</h3>
+                <p>
+                    Deploy, monitor, and manage machine learning models using
+                    CI/CD, Docker, Kubernetes, and cloud tools.
+                </p>
+                <button onclick="openCtaModal('mlops')">Learn More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="images/courses/data-transformation.png" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>
+                    Understand how organizations adopt digital technologies to
+                    transform operations, strategy, and customer experience.
+                </p>
+                <button onclick="openCtaModal('digital-transformation')">Learn More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-us">
+        <h2 class="section-title">Why Choose 360 DigiTMG?</h2>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="why-head">
+                    <img src="images/icons/instructor.png" alt="Expert Instructors">
+                    <h4>Expert Instructors</h4>
+                </div>
+                <p>
+                    Learn from industry professionals with 10+ years of real-world experience who bring practical
+                    insights and live project knowledge into every session.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-head">
+                    <img src="images/icons/certificate.png" alt="Industry Certifications">
+                    <h4>Industry-Recognized Certifications</h4>
+                </div>
+                <p>
+                    Get globally recognized certifications that validate your skills and enhance your credibility in
+                    today’s competitive job market.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-head">
+                    <img src="images/icons/projects.png" alt="Real World Projects">
+                    <h4>Hands-on Real-Time Projects</h4>
+                </div>
+                <p>
+                    Work on real-world case studies and live projects to gain practical experience and build a strong
+                    job-ready portfolio.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-head">
+                    <img src="images/icons/career-goals.png" alt="Career Support">
+                    <h4>Dedicated Career Support</h4>
+                </div>
+                <p>
+                    Benefit from resume building, mock interviews, career guidance, and placement assistance tailored to
+                    your career goals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="corporates">
+        <div class="corporates-container">
+            <img src="images/corporates/IBM_Logo_1967-1972.svg.png" alt="IBM">
+
+            <img src="images/corporates/Tata_Consultancy_Services_old_logo.svg.png" alt="TCS">
+
+            <img src="images/corporates/Google_logo_(2010-2013).svg.png" alt="Google">
+
+            <img src="images/corporates/Accenture.svg.png" alt="Accenture">
+        </div>
+    </section>
+
+    <section class="awards-section" id="awards">
+        <div class="awards-container">
+            <h2 class="awards-title">Awards and Accolades</h2>
+
+            <div class="awards-grid">
+                <!-- Award 1 -->
+                <div class="award-card">
+                    <img src="images/awards/OIP.webp" alt="CAHOTECH Award">
+                    <h4>2023 Hospital Innovation Award at CAHOTECH</h4>
+                    <p>Innovative Medical Inventory Solutions</p>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="award-card">
+                    <img src="images/awards/Gaisa_new_logo.png" alt="GAISA Award">
+                    <h4>2024 Global AI Summit Award</h4>
+                    <p>Best Use of AI in Education for AiTutor</p>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="award-card">
+                    <img src="images/awards/Analytics_India_Magazine_(AIM)_Logo.png" alt="Analytics India Magazine">
+                    <h4>Top Data Science Training Provider</h4>
+                    <p>By Analytics India Magazine</p>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="award-card">
+                    <img src="images/awards/award-icon-for-website-symbol-presentation-free-vector.jpg"
+                        alt="Media Recognition">
+                    <h4>Featured on Major Media Outlets</h4>
+                    <p>Recognized Thought Leadership in Education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-track">
+
+                <div class="testimonial-card">
+                    <div class="testimonial-inner">
+                        <div class="avatar-icon">👤</div>
+                        <h3>Kunal Bhele</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            I had a great experience learning data analytics here. The teaching staff is very good.
+                            They explain everything in a simple and clear way.
+                        </p>
+                        <span>Data Analytics</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-inner">
+                        <div class="avatar-icon">👤</div>
+                        <h3>Pranjal Bhavsar</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            Well-structured content, experienced trainers, and hands-on projects.
+                            Helped me build strong skills in data science.
+                        </p>
+                        <span>Data Science</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-inner">
+                        <div class="avatar-icon">👤</div>
+                        <h3>Karan Sahgal</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            Teachers and staff members are very understanding and supportive.
+                            Overall enjoyed my experience.
+                        </p>
+                        <span>AI & ML</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-inner">
+                        <div class="avatar-icon">👤</div>
+                        <h3>Akshata Lawangare</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            Very helpful learning environment with clear explanations and guidance.
+                        </p>
+                        <span>Digital Transformation</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-inner">
+                        <div class="avatar-icon">👤</div>
+                        <h3>Aditya Veer</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            The mentors are excellent. Their teaching method is very clear and they solve doubts nicely.
+                        </p>
+                        <span>MLOps</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="testimonial-dots"></div>
+    </section>
+
+    <section class="cta" id="contact">
+        <h2>Ready to Transform Your Career?</h2>
+        <p>Book a free counselling session with our experts.</p>
+        <button class="cta-btn" onclick="openCtaModal()">Get Started</button>
+    </section>
+
+    <div class="cta-modal" id="ctaModal">
+        <div class="cta-modal-content">
+            <span class="close" onclick="closeCtaModal()">&times;</span>
+
+            <h3>Free Career Counselling</h3>
+
+            <form id="ctaForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Mobile Number" required>
+
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Data Engineering">Data Engineering</option>
+                    <option value="Gen AI & Prompt Engineering">Gen AI & Prompt Engineering</option>
+                    <option value="MLOps">MLOps</option>
+                    <option value="Digital Transformation">Digital Transformation</option>
+                </select>
+
+                <button type="submit">Request Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer-modern">
+        <div class="footer-wrapper">
+
+            <div class="footer-card">
+                <h3>360DigiTMG – Kharadi</h3>
+
+                <p class="address">
+                    Office No. 705, 7th Floor,<br>
+                    Global Business Hub,<br>
+                    Opp. EON Free Zone,<br>
+                    Kharadi, Pune – 411014
+                </p>
+
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <a href="tel:+919513237709">+91 95132 37709</a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <a href="mailto:kharadi.pune@360digitmg.com">
+                        kharadi.pune@360digitmg.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-card map-card">
+                <iframe src="https://www.google.com/maps?q=360DigiTMG%20Kharadi%20Pune&output=embed" loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-modern">
+            EduLeap is the Authorised Learning Partner of 360DigiTMG in Pune
+        </div>
+    </footer>
+
+    <a href="https://wa.me/918669586311?text=Hello%20I%20want%20to%20enquire%20about%20training%20programs"
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+
+        <svg viewBox="0 0 32 32" class="wa-icon" aria-hidden="true">
+            <path fill="currentColor"
+                d="M19.11 17.205c-.29-.145-1.72-.847-1.987-.943-.266-.096-.46-.145-.654.145-.194.29-.75.943-.92 1.137-.17.194-.34.218-.63.073-.29-.145-1.225-.452-2.333-1.44-.862-.77-1.444-1.72-1.613-2.01-.17-.29-.018-.446.127-.59.13-.13.29-.34.436-.51.145-.17.194-.29.29-.484.097-.194.05-.363-.025-.508-.073-.145-.654-1.577-.896-2.163-.236-.57-.476-.493-.654-.503l-.557-.01c-.194 0-.508.073-.774.363s-1.015.99-1.015 2.413 1.04 2.797 1.185 2.99c.145.194 2.05 3.135 4.97 4.396.695.3 1.236.48 1.66.614.697.222 1.333.19 1.835.115.56-.083 1.72-.704 1.96-1.385.242-.68.242-1.263.17-1.385-.073-.12-.266-.194-.557-.34M16.002 2.003c-7.732 0-14 6.268-14 14 0 2.46.637 4.766 1.753 6.77L2 30l7.41-1.945c1.94 1.057 4.164 1.663 6.592 1.663 7.732 0 14-6.268 14-14s-6.268-14-14-14m0 25.3c-2.205 0-4.257-.607-6.01-1.66l-.43-.257-4.4 1.155 1.175-4.287-.28-.443c-1.09-1.72-1.717-3.76-1.717-5.95 0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11" />
+        </svg>
+    </a>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
