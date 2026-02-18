@@ -81,11 +81,12 @@ body {
 }
 
 .logo img {
-    height: 56px;             
+    height: 56px;
     width: auto;
     max-width: 180px;
     object-fit: contain;
     display: block;
+    border-radius: 6px;
 }
 
 .nav-links {
@@ -214,7 +215,7 @@ body {
     }
 
     .logo img {
-        height: 42px;       
+        height: 42px;
         max-width: 150px;
     }
 }
@@ -230,6 +231,7 @@ body {
 .slides {
     display: flex;
     transition: transform 1s ease-in-out;
+    touch-action: pan-y;
 }
 
 .slide {
@@ -1188,15 +1190,16 @@ body {
 }
 
 .footer-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
-    padding: 0 6%;
+    padding: 0 4%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
 .footer-card {
+    width: 100%;
     background: #ffffff;
     border-radius: 18px;
     padding: 36px;
@@ -1212,14 +1215,13 @@ body {
     font-size: 1.5rem;
     color: #1e3a8a;
     margin-bottom: 18px;
-    position: relative;
 }
 
 .footer-card h3::after {
     content: "";
-    width: 50px;
+    width: 260px;
     height: 3px;
-    background: #2563eb;
+    background: #1e3a8a;
     display: block;
     margin-top: 6px;
     border-radius: 10px;
@@ -1253,20 +1255,16 @@ body {
     font-size: 1.1rem;
 }
 
-.map-card {
-    padding: 0;
-    overflow: hidden;
-}
-
-.map-card iframe {
+.footer-card iframe {
     width: 100%;
-    height: 100%;
-    min-height: 320px;
+    height: 260px;
+    border-radius: 14px;
     border: none;
+    margin-top: 18px;
 }
 
 .footer-bottom-modern {
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 16px 10px;
     background: #f1f5f9;
     text-align: center;
@@ -1274,13 +1272,56 @@ body {
     color: #64748b;
 }
 
-@media (max-width: 900px) {
+.full-width-card {
+    width: 100%; 
+    margin-bottom: 40px;
+}
+
+.footer-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 14px;
+    border: none;
+}
+
+.address-section,
+.map-section {
+    flex: 1;
+}
+
+@media screen and (max-width: 767px) {
     .footer-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
-    .map-card iframe {
-        min-height: 240px;
+    .map-section iframe {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-card-content {
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .map-section {
+        flex: 2;   
+    }
+
+    .address-section {
+        flex: 1;
+    }
+
+    .map-section iframe {
+        height: 240px;
     }
 }
 

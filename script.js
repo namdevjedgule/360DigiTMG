@@ -85,21 +85,68 @@ const slides = document.querySelectorAll(".slide");
 const bannerDots = document.querySelectorAll(".dot");
 
 let currentSlide = 0;
+let touchStartX = 0;   
+let isDragging = false;
+let autoSlideInterval;
 
 function showSlide(i) {
-  slidesContainer.style.transform = `translateX(-${i * 100}%)`;
+  currentSlide = (i + slides.length) % slides.length;
+  slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+
   bannerDots.forEach(d => d.classList.remove("active"));
-  bannerDots[i]?.classList.add("active");
-  currentSlide = i;
+  bannerDots[currentSlide]?.classList.add("active");
 }
 
-setInterval(() => {
-  showSlide((currentSlide + 1) % slides.length);
-}, 4500);
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    showSlide(currentSlide + 1);
+  }, 4500);
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
 
 bannerDots.forEach((dot, i) => {
-  dot.addEventListener("click", () => showSlide(i));
+  dot.addEventListener("click", () => {
+    stopAutoSlide();
+    showSlide(i);
+    startAutoSlide();
+  });
 });
+
+slidesContainer.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+  isDragging = true;
+  stopAutoSlide();
+}, { passive: true });
+
+slidesContainer.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+
+  const diffX = e.touches[0].clientX - touchStartX;
+  if (Math.abs(diffX) > 10) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+slidesContainer.addEventListener("touchend", (e) => {
+  if (!isDragging) return;
+  isDragging = false;
+
+  const touchEndX = e.changedTouches[0].clientX;
+  const diffX = touchEndX - touchStartX;
+
+  if (diffX > 50) {
+    showSlide(currentSlide - 1);
+  } else if (diffX < -50) {
+    showSlide(currentSlide + 1);
+  }
+
+  startAutoSlide();
+});
+
+startAutoSlide();
 
 const testimonialTrack = document.querySelector(".testimonial-track");
 const testimonialCards = document.querySelectorAll(".testimonial-card");
@@ -200,7 +247,7 @@ document.getElementById("ctaForm").addEventListener("submit", function (e) {
   const phone = document.getElementById("phone").value;
   const course = document.getElementById("course").value;
 
-  const whatsappNumber = "919850070368";
+  const whatsappNumber = "919637320202";
 
   const message =
     `Hello, I am interested in your courses.%0A%0A` +
@@ -317,5 +364,3 @@ function startAwardsAuto() {
 
 buildAwardsDots();
 startAwardsAuto();
-
-
